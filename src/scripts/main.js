@@ -27,10 +27,13 @@ mainUl.addEventListener('click', (e) => {
     const li = e.target.parentElement;
     const ul = li.querySelector('ul');
 
-    if (ul.style.display === 'none') {
-      ul.style.display = 'block';
-    } else {
-      ul.style.display = 'none';
+    if (ul !== null) {
+      if (ul.style.display === 'none') {
+        ul.style.display = 'block';
+      } else {
+        ul.style.display = 'none';
+      }
     }
+
   }
 });
